@@ -16,6 +16,11 @@ void mostrar(const Idol *idol) {
 int main() {
     Idol jennie = {"jennie", 50, 100, 100, 12000};
 
+    Idol *p = &jennie;
+
+    printf("%p\n", (void *)p);
+    printf("%p\n", (void *)&jennie);
+
     mostrar(&jennie);
     return 0;
     
